@@ -14,11 +14,29 @@
     document.write(`Seu nome em letras maisculas fica ${nome.toUpperCase()} <br/>`)
     document.write(`Seu nome em letras minusculas fica ${nome.toLowerCase()}`)
     var n1 = 1523.5;
+
     document.getElementById("resultado").innerHTML = n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
+    var calculo = window.prompt('Digite a operação (+, -, *, /):')
     var n1 = Number.parseFloat(window.prompt('Digite o primeiro numero'))
     var n2 = Number.parseFloat(window.prompt('Digite o segundo numero'))
-    var calc = n1 + n2
-    window.alert(`A soma dos valores constatado é: ${calc}`)
+    var result
+
+    switch (calculo) {
+        case '+':
+             result= n1 + n2
+            break
+        case'-':
+            result=n1 - n2
+            break
+        case '*':
+            result=n1 * n2
+            break
+        case '/':
+            result=n1 / n2
+            break
+    }
+    window.alert(`O resultado do calculo setado é: ${result}`)
+
 </script>
 <style>
 
