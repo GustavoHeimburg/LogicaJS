@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="resultado"></p>
+<script>
+    var nome = window.prompt('digite seu nome')
+    window.alert(`Obrigado ${nome}`)
+    document.write(`Ola meu guri ${nome}. Seu nome tem ${nome.length} letras Mas nao sei ${nome}
+        voce parece ser Estranho`) //Mostra as informações na tela(background)
+    document.write(`Seu nome em letras maisculas fica ${nome.toUpperCase()} <br/>`)
+    document.write(`Seu nome em letras minusculas fica ${nome.toLowerCase()}`)
+    var n1 = 1523.5;
+    document.getElementById("resultado").innerHTML = n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
+    var n1 = Number.parseFloat(window.prompt('Digite o primeiro numero'))
+    var n2 = Number.parseFloat(window.prompt('Digite o segundo numero'))
+    var calc = n1 + n2
+    window.alert(`A soma dos valores constatado é: ${calc}`)
+</script>
+<style>
+
+</style>
+</body>
+</html>
