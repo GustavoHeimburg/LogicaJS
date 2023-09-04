@@ -8,6 +8,7 @@
 <p id="resultado"></p>
 <p>Ola esta tudo bem?</p>
 <p>Aprendendo a usar o DOM no JS</p>
+<div id="msg">Clique aqui pia</div>
 <h1>Como anda as coisas por ai?</h1>
 <script>
     var nome = window.prompt('digite seu nome')
@@ -48,9 +49,10 @@
     //window.document.write(window.navigator.appName)
     //window.document.write(window.document.URL)
     var p1 = window.document.getElementsByTagName('p')[2]
-    window.document.write('Esta escritoa assim ' + p1.innerText)
+    window.document.write('Esta escrito assim ' + p1.innerText)
     p1.style.color = 'blue'
     window.alert(p1.innerHTML)
+    var d = window.document.getElementById('msg')
 </script>
 <style>
 
