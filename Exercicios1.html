@@ -2,21 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Usando JS</title>
 </head>
 <body>
 <p id="resultado"></p>
+<p>Ola esta tudo bem?</p>
+<p>Aprendendo a usar o DOM no JS</p>
+<h1>Como anda as coisas por ai?</h1>
 <script>
     var nome = window.prompt('digite seu nome')
     window.alert(`Obrigado ${nome}`)
-    document.write(`Ola meu guri ${nome}. Seu nome tem ${nome.length} letras Mas nao sei ${nome}
-        voce parece ser Estranho`) //Mostra as informações na tela(background)
-    document.write(`Seu nome em letras maisculas fica ${nome.toUpperCase()} <br/>`)
-    document.write(`Seu nome em letras minusculas fica ${nome.toLowerCase()}`)
+    //document.write(`Ola meu guri ${nome}. Seu nome tem ${nome.length} letras Mas nao sei ${nome}
+        //voce parece ser Estranho <br/>`) //Mostra as informações na tela(background)
+    //document.write(`Seu nome em letras maisculas fica ${nome.toUpperCase()} <br/>`)
+   // document.write(`Seu nome em letras minusculas fica ${nome.toLowerCase()}`)
     var n1 = 1523.5;
 
     document.getElementById("resultado").innerHTML = n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
-    var calculo = window.prompt('Digite a operação (+, -, *, /, %):')
+    var calculo = window.prompt('Digite a operação (+, -, *, /, %, **):')
     var n1 = Number.parseFloat(window.prompt('Digite o primeiro numero'))
     var n2 = Number.parseFloat(window.prompt('Digite o segundo numero'))
     var result
@@ -42,7 +45,12 @@
             break
     }
     window.alert(`O resultado do calculo setado é: ${result}`)
-
+    //window.document.write(window.navigator.appName)
+    //window.document.write(window.document.URL)
+    var p1 = window.document.getElementsByTagName('p')[2]
+    window.document.write('Esta escritoa assim ' + p1.innerText)
+    p1.style.color = 'blue'
+    window.alert(p1.innerHTML)
 </script>
 <style>
 
