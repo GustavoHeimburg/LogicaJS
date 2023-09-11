@@ -56,3 +56,16 @@ function pesquise(){
         }
     }
 }
+window.alert(`O resultado do calculo setado é: ${result}`)
+//window.document.write(window.navigator.appName)
+//window.document.write(window.document.URL)
+var p1 = window.document.getElementsByTagName('p')[2]
+window.document.write('Esta escrito assim ' + p1.innerText)
+p1.style.color = 'blue'
+window.alert(p1.innerHTML)
+var d = window.document.getElementById('msg')
+var d = window.document.getElementsByName('msg')[0]
+
+//Seletor, para alteraçoes rapidas
+
+var d = window.document.querySelector('div#msg')
